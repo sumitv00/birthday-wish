@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday - From Bunnyu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffe6e6, #ffcce0);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ff3399;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 10px;
+            color: #444;
+        }
+
+        .heart {
+            font-size: 4rem;
+            color: red;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            color: white;
+            background-color: #ff3399;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #cc0066;
+        }
+
+        .apology {
+            margin-top: 40px;
+            font-size: 1rem;
+            color: #555;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday, My Love Riyuu! <span class="heart">❤️</span></h1>
+    <p>Wishing you the happiest birthday ever, Riyuu! This is Bunnyu, reminding you how special you are.</p>
+    <p>You are my sunshine, my joy, and my reason to smile every day, Riyuu. Love, Bunnyu ❤️.</p>
+
+    <div class="apology">
+        <h2>I'm Sorry, Riyuu...</h2>
+        <p>For the mistakes I've made and the things I've done to hurt you, I truly apologize. 
+        You mean the world to me, and I promise to be better for you, for us. 
+        Thank you for your patience and love. I am so lucky to have you in my life, Riyuu.</p>
+    </div>
+
+    <button onclick="revealMessage()">Click Here for a Surprise</button>
+
+    <p id="surprise" style="display: none; margin-top: 20px; font-size: 1.5rem; color: #333;">
+        You are my everything, and I will love you forever. 💖
+    </p>
+
+    <script>
+        function revealMessage() {
+            document.getElementById('surprise').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
